@@ -73,19 +73,19 @@ def sorted_vac(json_saver, sorted_by):
         data = json.load(file)
 
         if sorted_by == 'id_vacancy':
-            # Сортировка вакансий по убыванию зарплат с ограничением по количеству вывода
+            # Сортировка вакансий по коду вакансии (id_vacancy)
             vac_sorted = sorted(data, key=lambda vac: vac["id_vacancy"])
 
         if sorted_by == 'company_name':
-            # Сортировка вакансий по убыванию зарплат с ограничением по количеству вывода
+            # Сортировка вакансий по наименованию компании (company_name)
             vac_sorted = sorted(data, key=lambda vac: vac["company_name"])
 
         if sorted_by == 'name_vacancy':
-            # Сортировка вакансий по убыванию зарплат с ограничением по количеству вывода
+            # Сортировка вакансий по наименованию вакансии (name_vacancy)
             vac_sorted = sorted(data, key=lambda vac: vac["name_vacancy"])
 
         if sorted_by == 'salary':
-            # Сортировка вакансий по убыванию зарплат с ограничением по количеству вывода
+            # Сортировка вакансий по зарплате (salary)
             vac_sorted = sorted(data, key=lambda vac: vac["salary"])
 
         for vac in vac_sorted:
