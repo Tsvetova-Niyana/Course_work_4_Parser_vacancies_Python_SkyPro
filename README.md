@@ -106,5 +106,5 @@ CSV- или Excel-файлом, с TXT-файлом.
         print_vacancies(top_vacancies)
 
 
-if __name__ == "__main__":
-    user_interaction()
+    if __name__ == "__main__":
+        user_interaction()
